@@ -1,0 +1,53 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "react-hooks",
+    "@typescript-eslint",
+    "prettier",
+    "import"
+  ],
+  "rules": {
+    "no-unused-vars": "off",
+    "prettier/prettier":"error",
+    "no-console": "warn",
+    "camelcase": "error",
+    "import/first": "error",
+    "react/react-in-jsx-scope": "off",
+    "no-duplicate-imports": "error",
+    "prefer-const": "warn",
+    "max-len": ["error", { "code": 120 }],
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "react/require-render-return": "error",
+    "react/jsx-no-duplicate-props": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    },
+    "react": {
+      "version": "detect"
+    }
+  }
+}

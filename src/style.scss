@@ -1,0 +1,32 @@
+.Toastify__toast--error {
+    background-color: #fdeded;
+}
+
+.Toastify__toast--success {
+  background: #edf7ed;
+}
+
+.Toastify__toast--warning {
+  background: #fff4e5;
+}
+
+.Toastify__toast-body {
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 4px;
+    box-shadow: none;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    display: flex;
+    padding: 0;
+    margin: 0;
+} 
+
+.Toastify__toast-body > .Toastify__toast-icon {
+   display: none;
+}
+
+.Toastify__toast > button>  svg {
+    display: none;
+}
